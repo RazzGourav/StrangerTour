@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
+
+    <title>StrangerTour Sign In</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 60px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group a {
+            display: block;
+            text-align: right;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+
+        .signin-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .signin-text a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signin-text a:hover {
+            text-decoration: underline;
+        }
+
+        .social-login {
+            margin-top: 30px;
+        }
+
+        .social-login a {
+            margin: 0 10px;
+            color: #666;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-login a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/6ZSfIaFbXT38HithwPBgRZC14NaW1F0rTzB0oGdfkmetRoInA.jpg" alt="StrangerTour logo">
+        </div>
+        <div class="title">Sign In</div>
+        <div class="subtitle">Welcome to StrangerTour!</div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your User ID" id="idInput"/>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Enter your Password" id="passwordInput"/>
+        </div>
+        <button class="btn" id="signButton">Sign In</button>
+        <a href="#">Forgot Password?</a>
+        <div class="signin-text">
+            Don't have an account? <a href="./signup.html">Sign Up</a>
+        </div>
+        <div class="social-login">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+    </div>
+</body>
+</html>

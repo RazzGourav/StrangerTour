@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    font-family: 'Inter','Roboto', sans-serif;
+    background: #fff;
+    color: #000;
+}
+.header {
+    background: url('./images/pexels-alejandro-aznar-155337093-20181286.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.header h1 {
+    font-size: 48px;
+    margin: 0;
+    animation: slideIn 2s ease-in-out;
+}
+.header p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+.header .btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1e90ff;
+    padding: 10px 0;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.nav a i {
+    margin-right: 8px;
+}
+.nav .contact {
+    background-color: white;
+    color: #1e90ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: #000;
+}
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header1 .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.header1 .search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.header1 .search input {
+    background: none;
+    border: none;
+    color: #000;
+    margin-left: 10px;
+    outline: none;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+.profile-info .name {
+    font-size: 24px;
+    font-weight: 700;
+}
+.profile-info .username {
+    font-size: 14px;
+    color: #a1a1a1;
+}
+.tags {
+    display: flex;
+    margin-top: 20px;
+}
+.tags .tag {
+    background-color:#1e90ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.travel-planning {
+    margin-top: 20px;
+}
+.travel-planning .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.travel-planning .cards {
+    display: flex;
+}
+.travel-planning .card {
+    background-color: #1e90ff;;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.travel-planning .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.preferences {
+    margin-top: 20px;
+}
+.preferences .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.preferences .content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+.preferences .content img {
+    width: 100%;
+    border-radius: 20px;
+}
+.preferences .content .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.preferences .content .actions .action {
+    background-color: #3a3a3c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.preferences .content .actions .action:nth-child(2) {
+    background-color: #007aff;
+}
+.preferences .content .actions .action.active {
+    background-color: #007aff;
+}
+.preferences .content .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.preferences .content .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.preferences .content .profile .info {
+    display: flex;
+    flex-direction: column;
+}
+.preferences .content .profile .info .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.preferences .content .profile .info .username {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+.preferences .content .edit-profile {
+    background-color: #007aff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.right-sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: #000;
+    border: 1px solid #ccc;
+}
+.right-sidebar .search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.right-sidebar .search input {
+    background: none;
+    border: none;
+    color: #000;
+    margin-left: 10px;
+    outline: none;
+}
+.right-sidebar .matching-algorithm {
+    margin-top: 20px;
+}
+.right-sidebar .matching-algorithm .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.right-sidebar .matching-algorithm .description {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin-bottom: 10px;
+}
+.right-sidebar .matching-algorithm .button {
+    background-color: #007aff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+.right-sidebar .matching-goals {
+    margin-top: 20px;
+}
+.right-sidebar .matching-goals .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.right-sidebar .matching-goals .goal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.right-sidebar .matching-goals .goal img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.right-sidebar .matching-goals .goal .info {
+    display: flex;
+    flex-direction: column;
+}
+.right-sidebar .matching-goals .goal .info .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.right-sidebar .matching-goals .goal .info .description {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+.right-sidebar .mates-list {
+    margin-top: 20px;
+}
+.right-sidebar .mates-list .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.right-sidebar .mates-list .mate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.right-sidebar .mates-list .mate img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.right-sidebar .mates-list .mate .info {
+    display: flex;
+    flex-direction: column;
+}
+.right-sidebar .mates-list .mate .info .name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.right-sidebar .mates-list .mate .info .description {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+    .footer {
+        background-color: #1e90ff;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    .footer a {
+        color: white;
+        margin: 0 10px;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    .footer p {
+        margin: 10px 0 0;
+        font-size: 14px;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }

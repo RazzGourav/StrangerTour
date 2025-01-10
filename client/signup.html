@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>StrangerTour Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <div class="text-center mb-6">
+            <h1 class="text-4xl font-bold text-cyan-600">StrangerTour</h1>
+        </div>
+        <h2 class="text-2xl font-bold text-center mb-2">Create a new account</h2>
+        <div>
+            <div class="flex space-x-2 mb-4">
+                <input type="text" placeholder="First name" id="firstName" class="w-1/2 p-2 border border-gray-300 rounded">
+                <input type="text" placeholder="Surname" id="lastName" class="w-1/2 p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-600 mb-1">Date of birth</label>
+                <div class="flex space-x-2">
+                    <select class="day w-1/3 p-2 border border-gray-300 rounded" id="dobDay">
+                        <option disabled selected>Day</option>
+                        <script>
+                            for (let day = 1; day <= 31; day++) {
+                                document.write(`<option>${day}</option>`);
+                            }
+                        </script>
+                    </select>
+                    <select class="month w-1/3 p-2 border border-gray-300 rounded" id="dobMonth">
+                        <option disabled selected>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+                    <select class="year w-1/3 p-2 border border-gray-300 rounded" id="dobYear">
+                        <option disabled selected>Year</option>
+                        <script>
+                            for (let year = 2024; year >= 1900; year--) {
+                                document.write(`<option>${year}</option>`);
+                            }
+                        </script>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-600 mb-1">Gender</label>
+                <div class="flex space-x-2">
+                    <label class="flex items-center space-x-1">
+                        <input type="radio" name="gender" id="genderFemale" class="gender form-radio">
+                        <span>Female</span>
+                    </label>
+                    <label class="flex items-center space-x-1">
+                        <input type="radio" name="gender" id="genderMale" class="gender form-radio">
+                        <span>Male</span>
+                    </label>
+                    <label class="flex items-center space-x-1">
+                        <input type="radio" name="gender" id="genderCustom" class="gender form-radio">
+                        <span>Custom</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="text" placeholder="Mobile number or email address" id="emailPhoneNumber" class="contact w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <input type="password" placeholder="New password" id="newPassword" class="password w-full p-2 border border-gray-300 rounded">
+            </div>
+            <p class="text-xs text-gray-600 mb-4">
+                People who use our service may have uploaded your contact information to StrangerTour. <a href="#" class="text-blue-600">Learn more.</a>
+            </p>
+            <p class="text-xs text-gray-600 mb-4">
+                By clicking Sign Up, you agree to our <a href="#" class="text-blue-600">Terms</a>, <a href="#" class="text-blue-600">Privacy Policy</a> and <a href="#" class="text-blue-600">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+            </p>
+            <div class="text-center mb-4">
+                <button class="signUpButton bg-green-600 text-white py-2 px-4 rounded font-bold" id="signButton">Sign Up</button>
+            </div>
+            <div class="text-center">
+                <a href="./sign.html" class="text-blue-600">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
